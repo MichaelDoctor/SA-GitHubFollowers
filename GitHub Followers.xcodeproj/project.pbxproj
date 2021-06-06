@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CAC9906D266CFD4400D9BB90 /* GFButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAC9906C266CFD4400D9BB90 /* GFButton.swift */; };
+		CAC9906F266D007800D9BB90 /* GFTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAC9906E266D007800D9BB90 /* GFTextField.swift */; };
+		CAC99073266D0D8600D9BB90 /* FollowerListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAC99072266D0D8600D9BB90 /* FollowerListVC.swift */; };
 		CAD3F3ED266AB71500960F03 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAD3F3EC266AB71500960F03 /* AppDelegate.swift */; };
 		CAD3F3EF266AB71500960F03 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAD3F3EE266AB71500960F03 /* SceneDelegate.swift */; };
 		CAD3F3F6266AB71600960F03 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CAD3F3F5266AB71600960F03 /* Assets.xcassets */; };
@@ -16,6 +19,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		CAC9906C266CFD4400D9BB90 /* GFButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GFButton.swift; sourceTree = "<group>"; };
+		CAC9906E266D007800D9BB90 /* GFTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GFTextField.swift; sourceTree = "<group>"; };
+		CAC99072266D0D8600D9BB90 /* FollowerListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FollowerListVC.swift; sourceTree = "<group>"; };
 		CAD3F3E9266AB71500960F03 /* GitHub Followers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "GitHub Followers.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CAD3F3EC266AB71500960F03 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CAD3F3EE266AB71500960F03 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -63,6 +69,9 @@
 				CAD3F3FA266AB71600960F03 /* Info.plist */,
 				CAD3F400266AF45F00960F03 /* SearchVC.swift */,
 				CAD3F402266AF48200960F03 /* FavoritesListVC.swift */,
+				CAC9906C266CFD4400D9BB90 /* GFButton.swift */,
+				CAC9906E266D007800D9BB90 /* GFTextField.swift */,
+				CAC99072266D0D8600D9BB90 /* FollowerListVC.swift */,
 			);
 			path = "GitHub Followers";
 			sourceTree = "<group>";
@@ -136,8 +145,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CAC9906F266D007800D9BB90 /* GFTextField.swift in Sources */,
 				CAD3F403266AF48200960F03 /* FavoritesListVC.swift in Sources */,
+				CAC9906D266CFD4400D9BB90 /* GFButton.swift in Sources */,
 				CAD3F401266AF45F00960F03 /* SearchVC.swift in Sources */,
+				CAC99073266D0D8600D9BB90 /* FollowerListVC.swift in Sources */,
 				CAD3F3ED266AB71500960F03 /* AppDelegate.swift in Sources */,
 				CAD3F3EF266AB71500960F03 /* SceneDelegate.swift in Sources */,
 			);

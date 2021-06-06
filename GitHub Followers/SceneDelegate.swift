@@ -21,8 +21,35 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // tab bar > nav controllers > view controllers
         window?.rootViewController = createTabbar()
         window?.makeKeyAndVisible()
+        
+        configureNavigationBar()
     }
-    
+
+    func sceneDidDisconnect(_ scene: UIScene) {
+       
+    }
+
+    func sceneDidBecomeActive(_ scene: UIScene) {
+        
+    }
+
+    func sceneWillResignActive(_ scene: UIScene) {
+        
+    }
+
+    func sceneWillEnterForeground(_ scene: UIScene) {
+        
+    }
+
+    func sceneDidEnterBackground(_ scene: UIScene) {
+        
+    }
+
+
+}
+
+//MARK: - Custom
+extension SceneDelegate {
     // Create Nav controller
     func createSearchNC() -> UINavigationController {
         let searchVC = SearchVC()
@@ -48,27 +75,9 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         tabbar.viewControllers = [createSearchNC(), createFavoritesNC()]
         return tabbar
     }
-
-    func sceneDidDisconnect(_ scene: UIScene) {
-       
+    
+    func configureNavigationBar() {
+        UINavigationBar.appearance().tintColor = .systemGreen
     }
-
-    func sceneDidBecomeActive(_ scene: UIScene) {
-        
-    }
-
-    func sceneWillResignActive(_ scene: UIScene) {
-        
-    }
-
-    func sceneWillEnterForeground(_ scene: UIScene) {
-        
-    }
-
-    func sceneDidEnterBackground(_ scene: UIScene) {
-        
-    }
-
-
 }
 
