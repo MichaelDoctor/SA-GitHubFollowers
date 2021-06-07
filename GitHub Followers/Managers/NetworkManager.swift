@@ -3,13 +3,15 @@
 //  GitHub Followers
 //
 //  Created by Michael Doctor on 2021-06-06.
-//
+//  Singleton
 
-import Foundation
+import UIKit
 
 class NetworkManager {
     static let shared = NetworkManager()
-    let baseURL = "https://api.github.com/users/"
+    private let baseURL = "https://api.github.com/users/"
+    let cache = NSCache<NSString, UIImage>()
+    
     private init() {}
     
     // completionHandler returns one or the other. @escaping = called once complete
