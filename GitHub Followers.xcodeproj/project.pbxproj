@@ -22,6 +22,7 @@
 		CAC9908F266E6C1200D9BB90 /* FollowerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAC9908E266E6C1200D9BB90 /* FollowerCell.swift */; };
 		CAC99091266E6CEE00D9BB90 /* GFAvatarImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAC99090266E6CEE00D9BB90 /* GFAvatarImageView.swift */; };
 		CAC99093266E779200D9BB90 /* UIHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAC99092266E779200D9BB90 /* UIHelper.swift */; };
+		CAC99099267399A200D9BB90 /* GFEmptyStateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAC99098267399A200D9BB90 /* GFEmptyStateView.swift */; };
 		CAD3F3ED266AB71500960F03 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAD3F3EC266AB71500960F03 /* AppDelegate.swift */; };
 		CAD3F3EF266AB71500960F03 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAD3F3EE266AB71500960F03 /* SceneDelegate.swift */; };
 		CAD3F3F6266AB71600960F03 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CAD3F3F5266AB71600960F03 /* Assets.xcassets */; };
@@ -46,6 +47,7 @@
 		CAC9908E266E6C1200D9BB90 /* FollowerCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FollowerCell.swift; sourceTree = "<group>"; };
 		CAC99090266E6CEE00D9BB90 /* GFAvatarImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GFAvatarImageView.swift; sourceTree = "<group>"; };
 		CAC99092266E779200D9BB90 /* UIHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIHelper.swift; sourceTree = "<group>"; };
+		CAC99098267399A200D9BB90 /* GFEmptyStateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GFEmptyStateView.swift; sourceTree = "<group>"; };
 		CAD3F3E9266AB71500960F03 /* GitHub Followers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "GitHub Followers.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CAD3F3EC266AB71500960F03 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CAD3F3EE266AB71500960F03 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -81,13 +83,13 @@
 		CAC9907F266D213600D9BB90 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				CAC990972673995F00D9BB90 /* ImageViews */,
+				CAC990962673995400D9BB90 /* Labels */,
+				CAC990952673994D00D9BB90 /* TextFields */,
+				CAC990942673993F00D9BB90 /* Buttons */,
 				CAC9908D266E6BEF00D9BB90 /* Cells */,
-				CAC9906C266CFD4400D9BB90 /* GFButton.swift */,
-				CAC9906E266D007800D9BB90 /* GFTextField.swift */,
-				CAC99074266D139700D9BB90 /* GFTitleLabel.swift */,
-				CAC99076266D149200D9BB90 /* GFBodyLabel.swift */,
 				CAC9907A266D168000D9BB90 /* GFAlertContainerView.swift */,
-				CAC99090266E6CEE00D9BB90 /* GFAvatarImageView.swift */,
+				CAC99098267399A200D9BB90 /* GFEmptyStateView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -143,6 +145,39 @@
 				CAC9908E266E6C1200D9BB90 /* FollowerCell.swift */,
 			);
 			path = Cells;
+			sourceTree = "<group>";
+		};
+		CAC990942673993F00D9BB90 /* Buttons */ = {
+			isa = PBXGroup;
+			children = (
+				CAC9906C266CFD4400D9BB90 /* GFButton.swift */,
+			);
+			path = Buttons;
+			sourceTree = "<group>";
+		};
+		CAC990952673994D00D9BB90 /* TextFields */ = {
+			isa = PBXGroup;
+			children = (
+				CAC9906E266D007800D9BB90 /* GFTextField.swift */,
+			);
+			path = TextFields;
+			sourceTree = "<group>";
+		};
+		CAC990962673995400D9BB90 /* Labels */ = {
+			isa = PBXGroup;
+			children = (
+				CAC99074266D139700D9BB90 /* GFTitleLabel.swift */,
+				CAC99076266D149200D9BB90 /* GFBodyLabel.swift */,
+			);
+			path = Labels;
+			sourceTree = "<group>";
+		};
+		CAC990972673995F00D9BB90 /* ImageViews */ = {
+			isa = PBXGroup;
+			children = (
+				CAC99090266E6CEE00D9BB90 /* GFAvatarImageView.swift */,
+			);
+			path = ImageViews;
 			sourceTree = "<group>";
 		};
 		CAD3F3E0266AB71500960F03 = {
@@ -250,6 +285,7 @@
 				CAC9907D266D1E9900D9BB90 /* UIViewController+Ext.swift in Sources */,
 				CAD3F403266AF48200960F03 /* FavoritesListVC.swift in Sources */,
 				CAC9906D266CFD4400D9BB90 /* GFButton.swift in Sources */,
+				CAC99099267399A200D9BB90 /* GFEmptyStateView.swift in Sources */,
 				CAD3F401266AF45F00960F03 /* SearchVC.swift in Sources */,
 				CAC99086266D69D900D9BB90 /* User.swift in Sources */,
 				CAC9908F266E6C1200D9BB90 /* FollowerCell.swift in Sources */,
