@@ -69,8 +69,8 @@ class FollowerListVC: UIViewController {
             self.dismissLoadingView()
             switch result {
             case .success(let followers):
-                self.presentSearchBar(bool: false)
                 if followers.count < 100 { self.hasMoreFollowers = false }
+                followers.isEmpty ? self.presentSearchBar(bool: true) : self.presentSearchBar(bool: false)
                 self.followers.append(contentsOf: followers)
                 
                 if self.followers.isEmpty {
