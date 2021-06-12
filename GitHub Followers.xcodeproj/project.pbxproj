@@ -33,6 +33,8 @@
 		CAC990AC2673CCAB00D9BB90 /* GFFollowerItemVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAC990AB2673CCAB00D9BB90 /* GFFollowerItemVC.swift */; };
 		CAC990AE2673CFD000D9BB90 /* Date+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAC990AD2673CFD000D9BB90 /* Date+Ext.swift */; };
 		CAC990B02673CFE400D9BB90 /* String+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAC990AF2673CFE400D9BB90 /* String+Ext.swift */; };
+		CAC990B22674404400D9BB90 /* PersistenceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAC990B12674404400D9BB90 /* PersistenceManager.swift */; };
+		CAC990B42674475700D9BB90 /* FavoriteCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAC990B32674475700D9BB90 /* FavoriteCell.swift */; };
 		CAD3F3ED266AB71500960F03 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAD3F3EC266AB71500960F03 /* AppDelegate.swift */; };
 		CAD3F3EF266AB71500960F03 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAD3F3EE266AB71500960F03 /* SceneDelegate.swift */; };
 		CAD3F3F6266AB71600960F03 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CAD3F3F5266AB71600960F03 /* Assets.xcassets */; };
@@ -68,6 +70,8 @@
 		CAC990AB2673CCAB00D9BB90 /* GFFollowerItemVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GFFollowerItemVC.swift; sourceTree = "<group>"; };
 		CAC990AD2673CFD000D9BB90 /* Date+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Ext.swift"; sourceTree = "<group>"; };
 		CAC990AF2673CFE400D9BB90 /* String+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Ext.swift"; sourceTree = "<group>"; };
+		CAC990B12674404400D9BB90 /* PersistenceManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistenceManager.swift; sourceTree = "<group>"; };
+		CAC990B32674475700D9BB90 /* FavoriteCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteCell.swift; sourceTree = "<group>"; };
 		CAD3F3E9266AB71500960F03 /* GitHub Followers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "GitHub Followers.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CAD3F3EC266AB71500960F03 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CAD3F3EE266AB71500960F03 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -152,6 +156,7 @@
 			isa = PBXGroup;
 			children = (
 				CAC99088266D6CC500D9BB90 /* NetworkManager.swift */,
+				CAC990B12674404400D9BB90 /* PersistenceManager.swift */,
 			);
 			path = Managers;
 			sourceTree = "<group>";
@@ -170,6 +175,7 @@
 			isa = PBXGroup;
 			children = (
 				CAC9908E266E6C1200D9BB90 /* FollowerCell.swift */,
+				CAC990B32674475700D9BB90 /* FavoriteCell.swift */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -330,6 +336,8 @@
 				CAC99086266D69D900D9BB90 /* User.swift in Sources */,
 				CAC990B02673CFE400D9BB90 /* String+Ext.swift in Sources */,
 				CAC9908F266E6C1200D9BB90 /* FollowerCell.swift in Sources */,
+				CAC990B22674404400D9BB90 /* PersistenceManager.swift in Sources */,
+				CAC990B42674475700D9BB90 /* FavoriteCell.swift in Sources */,
 				CAC99091266E6CEE00D9BB90 /* GFAvatarImageView.swift in Sources */,
 				CAC990A72673C82B00D9BB90 /* GFRepoItemVC.swift in Sources */,
 				CAC99079266D150D00D9BB90 /* GFAlertVC.swift in Sources */,
