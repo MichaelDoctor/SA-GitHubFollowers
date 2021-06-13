@@ -9,19 +9,22 @@ import UIKit
 
 class GFAlertContainerView: UIView {
 
-    var titleLabel: GFTitleLabel?
-    var messageLabel: GFBodyLabel?
-    var actionButton: GFButton?
+    var titleLabel: GFTitleLabel!
+    var messageLabel: GFBodyLabel!
+    var actionButton: GFButton!
     var padding: CGFloat = 20
+    
     
     override init(frame: CGRect) {
         super.init(frame: frame)
         configure()
     }
     
+    
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
+    
     
     func setSubViews(titleLabel: GFTitleLabel, messageLabel: GFBodyLabel, actionButton: GFButton, padding: CGFloat = 20) {
         self.titleLabel = titleLabel
@@ -29,10 +32,12 @@ class GFAlertContainerView: UIView {
         self.actionButton = actionButton
         self.padding = padding
         
+        addSubviews(titleLabel, actionButton, messageLabel)
         configureTitleLabel()
         configureActionButton()
         configureBodyLabel()
     }
+    
     
     private func configure() {
         backgroundColor = .systemBackground
@@ -46,10 +51,9 @@ class GFAlertContainerView: UIView {
 
 //MARK: - Configure Views
 extension GFAlertContainerView {
+    
     func configureTitleLabel() {
         guard let titleLabel = titleLabel else { return }
-        addSubview(titleLabel)
-        
         
         NSLayoutConstraint.activate([
             titleLabel.topAnchor.constraint(equalTo: self.topAnchor, constant: padding),
@@ -59,10 +63,9 @@ extension GFAlertContainerView {
         ])
     }
     
+    
     func configureActionButton() {
         guard let actionButton = actionButton else { return }
-        addSubview(actionButton)
-        
         
         NSLayoutConstraint.activate([
             actionButton.bottomAnchor.constraint(equalTo: self.bottomAnchor, constant: -padding),
@@ -73,8 +76,8 @@ extension GFAlertContainerView {
     }
     
     func configureBodyLabel() {
+        
         guard let messageLabel = messageLabel, let titleLabel = titleLabel, let actionButton = actionButton else { return }
-        self.addSubview(messageLabel)
         
         NSLayoutConstraint.activate([
             messageLabel.topAnchor.constraint(equalTo: titleLabel.bottomAnchor, constant: 8),

@@ -13,12 +13,12 @@ class GFAlertVC: UIViewController {
     let messageLabel = GFBodyLabel(textAlignment: .center)
     let actionButton = GFButton(backgroundColor: .systemPink, title: "OK")
     let containerView = GFAlertContainerView()
+    let padding: CGFloat = 20
     
     var alertTitle: String?
     var message: String?
     var buttonTitle: String?
     
-    let padding: CGFloat = 20
     
     init(title: String, message: String, buttonTitle: String) {
         super.init(nibName: nil, bundle: nil)
@@ -27,17 +27,19 @@ class GFAlertVC: UIViewController {
         self.buttonTitle = buttonTitle
     }
     
+    
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
     
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = UIColor(red: 0, green: 0, blue: 0, alpha: 0.75)
+        view.backgroundColor = UIColor.black.withAlphaComponent(0.75)
         configureContainerView()
         configureSubViews()
-        
     }
+    
     
     func configureContainerView() {
         view.addSubview(containerView)
@@ -52,6 +54,7 @@ class GFAlertVC: UIViewController {
         containerView.setSubViews(titleLabel: titleLabel, messageLabel: messageLabel, actionButton: actionButton)
     }
     
+    
     func configureSubViews() {
         titleLabel.text = alertTitle ?? "Something went wrong"
         
@@ -62,8 +65,8 @@ class GFAlertVC: UIViewController {
         messageLabel.numberOfLines = 4
     }
     
+    
     @objc func dismissVC() {
         dismiss(animated: true)
     }
-
 }
